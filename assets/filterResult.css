@@ -1,0 +1,35 @@
+/* DO NOT CHANGE ID NAME OR ENTIRE PAGE WILL BE AFFECTED */
+#filterResult {
+	border: 1px solid black;
+	text-align: center;
+}
+
+#filterResult ul {
+	list-style: none;
+	padding: 0;
+}
+
+#filterResult .row {
+	width: 100%;
+}
+
+#filterResult .row img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#filterResult .row, .col-sm-3, .col-sm-9, .col-sm-12 {
+ 	padding: 0;
+ 	margin: 0;
+}
+
+#filterResult .row button {
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+	#filterResult .row img {
+		margin: 10px 0;
+	}
+}

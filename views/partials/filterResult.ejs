@@ -1,0 +1,171 @@
+
+
+<% for(var i = 0; i < centerData.company.length; i++) { %>
+	<% for(var x = 0; x < centerData.company[i].Language.length; x++) { %>
+		<% if(centerData.company[i].Language[x] == query.language && centerData.company[i].City == query.city || centerData.company[i].Language[x] == query.language && query.city == "All") { %>
+
+			<div id="filterResult">
+				<div class="row">
+					<div class="col-sm-3">
+						<img src="<%= centerData.company[i].Logo %>" alt="Company logo">
+					</div>
+					<div class="col-sm-9">
+						<div class="row">
+							<div class="col-sm-12">
+								<h4><%= centerData.company[i].Name %></h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<ul>
+									<li><strong>Languages</strong></li>
+									<li><%= centerData.company[i].Language %></li>
+								</ul>
+							</div>
+							<div class="col-sm-4">
+								<ul>
+									<li><strong>City</strong></li>
+									<li><%= centerData.company[i].City %></li>
+								</ul>
+							</div>
+							<div class="col-sm-4">
+								<ul>
+									<li><strong>Address</strong></li>
+									<li><%= centerData.company[i].Address %></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<ul>
+									<li><strong>Website</strong></li>
+									<li>
+										<a href="<%= centerData.company[i].Website %>">
+											<%= centerData.company[i].Website %>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-sm-4">
+								<ul>
+									<li><strong>Phone</strong></li>
+									<li>
+										<a href="tel:<%= centerData.company[i].Phone %>">
+											<%= centerData.company[i].Phone %>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-sm-4">
+								<ul>
+									<li><strong>Email</strong></li>
+									<li>
+										<a href="mailto:<%= centerData.company[i].Email %>">
+											<%= centerData.company[i].Email %>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<a href="<%= centerData.company[i].Map %>" target="_blank">
+									<button class="btn btn-success">View Map</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<% } %>
+	<% } %>
+
+	<% if(query.language == undefined && query.city == undefined || query.language == "All" && query.city == "All" || query.language == "All" && centerData.company[i].City == query.city) { %>
+
+		<div id="filterResult">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="<%= centerData.company[i].Logo %>" alt="Company logo">
+				</div>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-12">
+							<h4><%= centerData.company[i].Name %></h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<ul>
+								<li><strong>Languages</strong></li>
+								<li><%= centerData.company[i].Language %></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul>
+								<li><strong>City</strong></li>
+								<li><%= centerData.company[i].City %></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul>
+								<li><strong>Address</strong></li>
+								<li><%= centerData.company[i].Address %></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<ul>
+								<li><strong>Website</strong></li>
+								<li>
+									<a href="<%= centerData.company[i].Website %>">
+										<%= centerData.company[i].Website %>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul>
+								<li><strong>Phone</strong></li>
+								<li>
+									<a href="tel:<%= centerData.company[i].Phone %>">
+										<%= centerData.company[i].Phone %>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul>
+								<li><strong>Email</strong></li>
+								<li>
+									<a href="mailto:<%= centerData.company[i].Email %>">
+										<%= centerData.company[i].Email %>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<a href="<%= centerData.company[i].Map %>" target="_blank">
+								<button class="btn btn-success">View Map</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<% } %>
+<% } %>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<% include partials/header.ejs %>
+
+<body onload="setValues()">
+	<% include partials/navBar.ejs %>
+	<!--
+	<div class="banner">
+		<div class="wrapper">
+			<h1>Call Centers</h1>
+		</div>
+	</div>
+	-->
+	
+	<div class="mapWrapper">
+		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mgmkacUWpC40VmRguz8Ors3tNpv6bj-J"></iframe>
+	</div>
+
+	<div class="container welcomeGuide">
+		<form id="filter" action="/call-centers" method="GET">
+			<div class="row">
+				<div class="col-sm-6">
+					<select id="language" name="language">
+						<option value="All">All languages</option>
+						<option value="English">English</option>
+						<option value="Spanish">Spanish</option>
+						<option value="Danish">Danish</option>
+						<option value="Swedish">Swedish</option>
+						<option value="Norwegian">Norwegian</option>
+						<option value="Finnish">Finnish</option>
+					</select>
+				</div>
+				<div class=col-sm-6>
+					<select id="city" name="city">
+						<option value="All">All cities</option>
+						<option value="Malaga">Málaga</option>
+						<option value="Torremolinos">Torremolinos</option>
+						<option value="Benalmadena">Benalmádena</option>
+						<option value="Fuengirola">Fuengirola</option>
+						<option value="Mijas">Mijas</option>
+						<option value="Marbella">Marbella</option>
+					</select>
+				</div>
+				<br><br>
+				<div class="col-sm-3">
+					<!--
+					<input type="search" name="search" placeholder="Search by name...">
+					-->
+				</div>
+				<br><br>
+			</div>
+			<input type="submit" name="submit" value="Search" onclick="getValues()">
+			<br><br>
+		</form>
+		<hr>
+
+	<% include partials/filterResult.ejs %>
+
+	</div>	
+
+	<% include partials/footer.ejs %>
+
+</body>
+</html>

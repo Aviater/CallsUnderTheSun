@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<% include partials/header.ejs %>
+
+<body>
+	<% include partials/navBar.ejs %>
+
+	<div class="banner">
+		<div class="wrapper">
+			<h1>Registration</h1>
+		</div>
+	</div>
+
+	<form class="registration" method="POST" action="">
+		<label for="name">Name: </label>
+		<br>
+		<input type="text" name="name" required>
+		<br><br>
+		<label for="email">Email: </label>
+		<br>
+		<input type="email" name="email" required>
+		<br><br>
+		<label for="id">Call Center ID: </label>
+		<br>
+		<input type="number" name="id" required>
+		<br><br>
+		<input type="submit" value="Register" class="btn btn-info">
+	</form>
+
+
+
+
+
+	<% include partials/footer.ejs %>
+</body>
+</html>

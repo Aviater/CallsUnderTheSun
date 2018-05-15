@@ -1,0 +1,3 @@
+Sitemap: https://www.callsunderthesun.com/sitemap.xml
+
+User-agent: *

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<% include partials/header.ejs %>
+
+<body>
+
+	<div class="sliderSection">
+		<div class="welcomeText">
+			<div class="wrapper">
+				<h1>Call Centers Malaga</h1>
+				<p>This is your one-stop resource for integrating and feeling part of life in Malaga; quickly and easily. We'll guide you through the process of how and where to get all necesary paperwork, what to look out for and how to quickly find work in any of the available call centers in the area, as well as providing you a translated version of all Spanish official paperwork and contracts.</p>
+				<button id="welcomeBtn" class="btn btn-info">Let's Get Started</button>
+			</div>
+		</div>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	        <ol class="carousel-indicators">
+	        	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	        	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	        	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	        </ol>
+	        <div class="carousel-inner" role="listbox">
+				<!-- Slide One - Set the background image for this slide in the line below -->
+				<div class="carousel-item slide1 active">
+				</div>
+				<!-- Slide Two - Set the background image for this slide in the line below -->
+				<div class="carousel-item slide2">
+				</div>
+				<!-- Slide Three - Set the background image for this slide in the line below -->
+				<div class="carousel-item slide3">
+	        	</div>
+	        </div>
+     	</div>
+	</div>
+	
+	<div class="infoSection">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<a href="/welcome-guide">
+						<div class="wrapper welcomeGuide">
+							<h2>Welcome Guide</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a href="/area-guide">
+						<div class="wrapper areaGuide">
+							<h2>Area Guide</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a href="required-papers">
+						<div class="wrapper papers">
+							<h2>Required Papers</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<a href="/residence-and-housing">
+						<div class="wrapper housing">
+							<h2>Residence &amp; Housing</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a href="/work-contracts">
+						<div class="wrapper workContracts">
+							<h2>Work Contracts</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a href="/general-info">
+						<div class="wrapper genInfo">
+							<h2>General Info</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<a href="/call-centers">
+						<div class="wrapper callCenters">
+							<h2>Call Center Locations &amp; Hiring Info</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<% include partials/footer.ejs %>
+
+</body>
+</html>

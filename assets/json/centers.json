@@ -1,0 +1,38 @@
+{
+	"test": "This is for testing purposes",
+	"company": [
+		{
+			"Logo": "./assets/images/companyLogos/hello-sales-logo.png",
+			"Name": "Hello Sales",
+			"Language": ["Danish"],
+			"City": "Fuengirola",
+			"Address": "Calle Feria de Jerez, 11",
+			"Website": "http://hellosales.dk",
+			"Phone": "0034 661 288 472",
+			"Email": "info@hellosales.dk",
+			"Map": "https://www.google.com/maps?cid=11439641231336474595"
+		},
+		{
+			"Logo": "./assets/images/companyLogos/voiper-logo.png",
+			"Name": "VoIPer",
+			"Language": ["Spanish", "English"],
+			"City": "Fuengirola",
+			"Address": "Camino de las Cañadas, 1C Portal 1 - 2ºG",
+			"Website": "https://voiper.es",
+			"Phone": "0034 910 381 070",
+			"Email": "info@VoIPer.es",
+			"Map": "https://www.google.com/maps?cid=8766281129222134505"
+		},
+		{
+			"Logo": "./assets/images/companyLogos/sector-alarm-logo.png",
+			"Name": "Sector Alarm",
+			"Language": ["Norwegian", "Spanish", "English"],
+			"City": "Fuengirola",
+			"Address": "Calle Tulipán 2",
+			"Website": "https://www.sectoralarm.es",
+			"Phone": "0034 902 232 000",
+			"Email": "clientes@sectoralarm.es",
+			"Map": "https://www.google.com/maps?cid=10686478870635442573"
+		}
+	]
+}

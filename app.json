@@ -1,0 +1,10 @@
+
+{
+	"name": "CallsUnderTheSun",
+	"description": "A web application for call centers in Málaga",
+	"repository": "https://github.com/Aviater/CallsUnderTheSun",
+	"logo": "http://node-js-sample.herokuapp.com/node.svg",
+	"keywords": ["calls", "malaga", "costa del sol", "call centers", "centers"],
+	"image": "heroku/nodejs"
+
+}

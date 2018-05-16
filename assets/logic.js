@@ -17,5 +17,17 @@ function setValues() {
 }
 
 
+// ACCOUNT MANAGEMENT
+
+var index = $(".row").index(0);
+
+$(".edit").on("click", function() {
+	$("input").removeAttr("readonly");
+	$("input").toggleClass("edit");
+});
+
+$(".password").on("click", function() {
+	$(".pswd").toggleClass("hidden");
+});
 
 

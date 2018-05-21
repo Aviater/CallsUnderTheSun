@@ -1,43 +1,43 @@
-.container h2 {
+.account .container h2 {
 	text-align: center;
 	margin: 40px 0 20px;
 }
 
-.container .row .col-md-8 .wrapper {
+.account .container .row .col-md-8 .wrapper {
 	position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.container .userInfo {
+.account .container .userInfo {
 	width: 70%;
     margin: 40px auto 0;
 }
 
-.container .userInfo .row {
+.account .container .userInfo .row {
 	margin: 5px 0;
 }
 
-.container .userInfo .row:nth-of-type(7) {
+.account .container .userInfo .row:nth-of-type(7) {
 	border-top: 1px solid black;
 }
 
-.container .userInfo .row:nth-of-type(7) input {
+.account .container .userInfo .row:nth-of-type(7) input {
 	background-color: white;
 	border: 1px solid black;
 }
 
-.container .userInfo .row:nth-of-type(8) input {
+.account .container .userInfo .row:nth-of-type(8) input {
 	background-color: white;
 	border: 1px solid black;
 }
 
-.container .userInfo .row:nth-of-type(9) input {
+.account .container .userInfo .row:nth-of-type(9) input {
 	background-color: white;
 	border: 1px solid black;
 }
 
-.container .userInfo .row input {
+.account .container .userInfo .row input {
 	position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -46,19 +46,19 @@
     padding-left: 5px;
 }
 
-.container .userInfo .row p {
+.account .container .userInfo .row p {
 	margin: 10px 0;
 }
 
-.container .userInfo .pswd {
+.account .container .userInfo .pswd {
 	display: none;
 }
 
-.container .userInfo .btnWrapper {
+.account .container .userInfo .btnWrapper {
 	margin: 20px auto 0;
 }
 
-.container .userInfo .btnWrapper button, .submit {
+.account .container .userInfo .btnWrapper button, .submit {
 	width: 100px;
 	height: 38px;
 	border-radius: 0.25rem;
@@ -67,63 +67,63 @@
 	border: none !important;
 }
 
-.container .userInfo .btnWrapper .btn.btn-danger {
+.account .container .userInfo .btnWrapper .btn.btn-danger {
 	width: 160px;
 }
 
-.container .userInfo .btnWrapper .submit {
+.account .container .userInfo .btnWrapper .submit {
 	background-color: #17a2b8;
 }
 
-.container .userInfo .btnWrapper .submit:hover {
+.account .container .userInfo .btnWrapper .submit:hover {
 	background-color: #148a9c;
 }
 
-.container .userInfo .row:hover {
+.account .container .userInfo .row:hover {
 	background-color: rgba(211, 211, 211, 0.5);
 	border-radius: 10px;
 }
 
-.container .userInfo .row:last-of-type:hover {
+.account .container .userInfo .row:last-of-type:hover {
 	background-color: transparent;
 }
 
-.container .userInfo .row:hover button {
+.account .container .userInfo .row:hover button {
 	display: initial;
 }
 
-.edit {
+.account .edit {
 	border: 1px solid black !important;
 }
 
-.hidden {
+.account .hidden {
 	display: flex !important;
 }
 
 @media screen and (max-width: 767px) {
 
-	.container .row .col-md-4 img {
+	.account .container .row .col-md-4 img {
 		display: block;
 		margin: 0 auto;
 	}
 
-	.container .row .col-md-8 p {
+	.account .container .row .col-md-8 p {
 		text-align: center;
 		margin-top: 10px;
 	}
 
-	.container .userInfo .btnWrapper {
+	.account .container .userInfo .btnWrapper {
 		width: 200px;
     	margin: 20px auto 0;
     	text-align: center;
 	}
 
-	.container .userInfo .btnWrapper button, .submit {
+	.account .container .userInfo .btnWrapper button, .submit {
 		width: 160px;
 		margin: 2px 0;
 	}
 
-	.container .userInfo .btnWrapper .submit {
+	.account .container .userInfo .btnWrapper .submit {
 		top: unset;
     	transform: unset;
 	}
@@ -131,19 +131,19 @@
 
 @media screen and (max-width: 575px) {
 
-	.container .userInfo .row .col-sm-6, p, input {
+	.account .container .userInfo .row .col-sm-6, p, input {
 		text-align: center;
 	}
 
-	.container .userInfo .btnWrapper {
+	.account .container .userInfo .btnWrapper {
 		margin-top: 20px;
 	}
 
-	.container .userInfo .row p {
+	.account .container .userInfo .row p {
 		margin: 2px 0;
 	}
 
-	.container .userInfo .row {
+	.account .container .userInfo .row {
 		margin: 20px 0;
 	}
 }

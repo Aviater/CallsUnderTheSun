@@ -1,8 +1,14 @@
 var express = require("express");
 var http = require("http");
-
-// DATABASE CONNECTION
+var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
+
+// Database connection
+mongoose.connect("mongodb://localhost/callsunderthesun");
+var db = mongoose.connection;
+
+// Access models
+User = require("./models/user");
 
 
 // DO NOT FORGET TO REMOVE COMMENTS BEFORE COMMITTING
@@ -28,6 +34,7 @@ app.use("/assets", express.static("assets"));
 app.use('/assets', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // Redirect Bootstrap JS
 app.use('/assets', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
 app.use('/assets', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect Bootstrap CSS
+app.use(bodyParser.json()); // BodyParse middleware
 
 // routes
 app.get('/', function (req, res) {
@@ -92,11 +99,52 @@ app.get('/robots', function (req, res) {
   res.render('robots', {});
 });
 
+// Database functions
+app.get("/api/users", function(req, res) {
+  User.getUsers(function(err, users) {
+    if(err) {
+      throw err;
+    }
+    res.json(users);
+  });
+});
+
+app.post("/api/users", function(req, res) {
+  var user = req.body;
+  User.addUser(user, function(err, user) {
+    if(err) {
+      throw err;
+    }
+    res.json(user);
+  });
+});
+
+app.put("/api/users/:_id", function(req, res) {
+  var id = req.params._id;
+  var user = req.body;
+  User.updateUser(id, user, {}, function(err, user) {
+    if(err) {
+      throw err;
+    }
+    res.json(user);
+  });
+});
+
+app.delete("/api/users/:_id", function(req, res) {
+  var id = req.params._id;
+  User.deleteUser(id, function(err, user) {
+    if(err) {
+      throw err;
+    }
+    res.json(user);
+  });
+});
+
 // set port
 var port = process.env.PORT || 8080;
 
 // listen to port
 app.listen(port, function() {
-	console.log("Running!");
+	console.log("Application is running on port " + port + "...");
 });
 

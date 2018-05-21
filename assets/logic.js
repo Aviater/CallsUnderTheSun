@@ -3,6 +3,8 @@ $("#welcomeBtn").on("click",function(){
   $('html, body').animate({scrollTop: divPosition.top}, "slow");
 });
 
+
+// Search queries session storage
 var city = document.getElementById("city");
 var language = document.getElementById("language");
 
@@ -17,8 +19,7 @@ function setValues() {
 }
 
 
-// ACCOUNT MANAGEMENT
-
+// Account management
 var index = $(".row").index(0);
 
 $(".edit").on("click", function() {
